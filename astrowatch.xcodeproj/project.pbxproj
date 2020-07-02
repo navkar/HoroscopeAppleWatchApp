@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7E4E114024AD5B8C00B00F50 /* ForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4E113F24AD5B8C00B00F50 /* ForecastModel.swift */; };
-		7EB8177724AC0028006C874E /* astrowatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7EB8177624AC0028006C874E /* astrowatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7EB8177724AC0028006C874E /* Astro Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7EB8177624AC0028006C874E /* Astro Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7EB8177D24AC0028006C874E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB8177B24AC0028006C874E /* Interface.storyboard */; };
 		7EB8177F24AC0029006C874E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EB8177E24AC0029006C874E /* Assets.xcassets */; };
 		7EB8178624AC0029006C874E /* astrowatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7EB8178524AC0029006C874E /* astrowatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -59,7 +59,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				7EB8177724AC0028006C874E /* astrowatch WatchKit App.app in Embed Watch Content */,
+				7EB8177724AC0028006C874E /* Astro Watch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,7 +69,7 @@
 /* Begin PBXFileReference section */
 		7E4E113F24AD5B8C00B00F50 /* ForecastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastModel.swift; sourceTree = "<group>"; };
 		7EB8177224AC0028006C874E /* astrowatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = astrowatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EB8177624AC0028006C874E /* astrowatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "astrowatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB8177624AC0028006C874E /* Astro Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Astro Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB8177C24AC0028006C874E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		7EB8177E24AC0029006C874E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EB8178024AC0029006C874E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				7EB8177224AC0028006C874E /* astrowatch.app */,
-				7EB8177624AC0028006C874E /* astrowatch WatchKit App.app */,
+				7EB8177624AC0028006C874E /* Astro Watch.app */,
 				7EB8178524AC0029006C874E /* astrowatch WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -206,7 +206,7 @@
 			);
 			name = "astrowatch WatchKit App";
 			productName = "astrowatch WatchKit App";
-			productReference = 7EB8177624AC0028006C874E /* astrowatch WatchKit App.app */;
+			productReference = 7EB8177624AC0028006C874E /* Astro Watch.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		7EB8178424AC0029006C874E /* astrowatch WatchKit Extension */ = {
@@ -456,6 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"astrowatch WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 59FDG75MW9;
 				ENABLE_PREVIEWS = YES;
@@ -471,7 +472,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
@@ -480,6 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"astrowatch WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 59FDG75MW9;
 				ENABLE_PREVIEWS = YES;
@@ -495,7 +497,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
@@ -505,16 +507,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 59FDG75MW9;
 				IBSC_MODULE = astrowatch_WatchKit_Extension;
 				INFOPLIST_FILE = "astrowatch WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.navkar.astrowatch.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Astro Watch";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
@@ -524,16 +527,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 59FDG75MW9;
 				IBSC_MODULE = astrowatch_WatchKit_Extension;
 				INFOPLIST_FILE = "astrowatch WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.navkar.astrowatch.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Astro Watch";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
@@ -541,7 +545,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 59FDG75MW9;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.navkar.astrowatch;
@@ -554,7 +558,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 59FDG75MW9;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.navkar.astrowatch;
