@@ -2,11 +2,11 @@
 
 ![Alt text](screenshots/poster.png?raw=true "Poster")
 
-## Points to Note
+## What does it take?
 
-* Learn how to build an App for Apple Watch - Series 5 
 * XCode 11.6
 * SwiftUI 
+* To build a WatchKit application for a device, you first need to have an Apple Watch that’s paired with an iPhone. When you build and install the app, you’re actually building and installing an iOS app, and the watchOS app it contains is then copied to the Apple Watch.
 
 ## App Screenshots
 
@@ -58,3 +58,23 @@ Views were written in SwiftUI
         }
     }
 ```
+
+## Bundle Id setup for Apple Watch
+
+* Setup Bundle IDs for the Apple Watch App
+
+```json
+com.navkar.astrowatch (explicit)
+com.navkar.astrowatch.watchkitapp (explicit)
+com.navkar.astrowatch.watchkitapp.watchkitextension (explicit)
+```
+
+![Alt text](screenshots/bundle-id.png?raw=true "Poster")
+
+### HOWTO debug the iOS part of Apple Watch app in the Simulator
+
+1. Select the WatchKit App target then click the Run icon. Xcode will install the iOS app, without launching it, then will install and launch the WatchKit app.
+
+2. Select the iOS App target and click the Run icon. Xcode will install the iOS app again, but will also launch it, attaching it for debugging.
+
+3. Finally, in the debug Xcode panel at the bottom, click on the target icon (next to the appearance icon), which is actually a popup button, to choose which of both targets should display its debugging output.
