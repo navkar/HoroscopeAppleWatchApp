@@ -71,6 +71,13 @@ com.navkar.astrowatch.watchkitapp.watchkitextension (explicit)
 
 ![Alt text](screenshots/bundle-id.png?raw=true "Poster")
 
+## info.plist - Bundle Id - Pitfalls
+
+![Alt text](screenshots/info.plist.1.png?raw=true "plist-1")
+
+![Alt text](screenshots/info.plist.2.png?raw=true "plist-2")
+
+
 ### HOWTO debug the iOS part of Apple Watch app in the Simulator
 
 1. Select the WatchKit App target then click the Run icon. Xcode will install the iOS app, without launching it, then will install and launch the WatchKit app.
